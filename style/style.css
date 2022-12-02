@@ -30,9 +30,18 @@ ul {
 
 }
 
+@font-face {
+    font-family: regular;
+    src: url(/fonts/Poppins-Medium.ttf);
+}
+
 .h,
 .hs {
     font-size: 25px;
+}
+
+.header {
+    margin: 0;
 }
 
 
@@ -40,7 +49,6 @@ ul {
 
 .nav {
     display: flex;
-    max-height: 90px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -92,7 +100,7 @@ ul {
 
 .our {
     display: flex;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .our__content {
@@ -116,4 +124,133 @@ ul {
 
 .stand__button {
     margin-top: 30px;
+}
+
+
+/* user */
+
+.user {
+    display: flex;
+}
+
+
+/* peoples */
+
+.peoples {
+    margin-top: 100px;
+}
+
+.peoples__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.peoples__item{
+    align-items: center;
+    justify-content: center;
+}
+
+.peoples__item:not(:nth-child(3n)){
+    margin-right: 40px;
+}
+
+.peoples__item:nth-child(n+4){
+    margin-top: 85px;
+}
+
+.peoples__name{
+    align-self: center;
+}
+
+.peoples__heading {
+    display: flex;
+    justify-content: center;
+}
+
+/* trust */
+
+.trust {
+    margin-top: 122px;
+}
+
+.trust__top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trust__adress{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: auto;
+}
+
+.sse {
+    margin-top: 19px;
+}
+
+.trust__left {
+    display: flex;
+    align-items: center;
+}
+
+.trust__heading {
+    margin-left: 5px;
+}
+
+.trust__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.trust__line{
+    width: 776px;
+    height: 4px;
+    background-color: black;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+.trust__down {
+    margin-top: 45px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+/* nav */
+
+.nav {
+    display: flex;
+    margin-top: 122px;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.footer__left {
+    display: flex;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.trust__dleft {
+    display: flex;
+    align-items: center;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 55px;
+}
+
+.footer__img {
+    margin: auto;
+}
+
+.footer__text-logo {
+    margin-left: 22px;
+    margin-right: 22px;
 }

@@ -23,10 +23,10 @@
                 </div>
                 <ul class="header__list">
                     <li class="header__item"><a class="header__link">Главная</a></li>
-                    <li class="header__item"><a class="header__link">Кто мы</a></li>
-                    <li class="header__item"><a class="header__link">Реквизиты</a></li>
-                    <li class="header__item"><a class="header__link">Отчетность</a></li>
-                    <li class="header__item"><a class="header__link">Партнеры</a></li>
+                    <li class="header__item"><a href="#1" class="header__link">Кто мы</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Реквизиты</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Отчетность</a></li>
+                    <li class="header__item"><a href="#5" class="header__link">Партнеры</a></li>
                 </ul>
                 <button class="header__button btn">
                     сделать добро
@@ -37,7 +37,7 @@
     <section class="section">
         <div class="container">
             <h1 class="headen"></h1>
-            <div class="freedom">
+            <div id="1" class="freedom">
                 <div class="freedom__left">
                     <p class="freedom__heading h"><strong>Будь патриотом - поддержи нашу армию освободителей.</strong></p>
                     <p class="freedom__text">Мы - неравнодушные Россияне предлогаем свою помощь нашим военнослужащим. Наши парни обеспечены всем необходимым, но уверен, что любая наша поддержка и простое человеческое внимание поможет, в первую очередь, поддеожать моральный и боевой дух.</p>
@@ -118,8 +118,8 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="peoples">
-                <p class="peoples__heading hs">С нами уже твкие люди, как</p>
+            <div id="5" class="peoples">
+                <p class="peoples__heading hs"><strong>С нами уже тaкие люди, как</strong></p>
                 <ul class="peoples__list">
                     <li class="peoples__item">
                         <div class="peoples__img">
@@ -147,7 +147,7 @@
                     </li>
                     <li class="peoples__item">
                         <div class="peoples__img">
-                            <img src="/imgs/vera.png" alt="брежнева">
+                            <img class="immg" src="/imgs/vera.png" alt="брежнева">
                         </div>
                         <p class="peoples__name">Вера Брежнева</p>
                     </li>
@@ -169,24 +169,24 @@
                         <div class="trust__img">
                             <img src="/imgs/heart.png" alt="heart">
                         </div>
-                        <p class="trust__heading hs">Благотворительный фонд</p>
+                        <p class="trust__heading hs"><strong>Благотворительный<br> фонд</strong></p>
                     </div>
                     <div class="trust__right">
                         <div class="trust__adress">
-                            <address class="trust__adr">Адрес: г.Калининград,пл.Победы,10,ТЦ Кловер,каб.320</address>
-                            <address class="trust__mail">Почта: temkto.naphronte@mail.ru</address>
-                            <address class="trust__tel">Телефон: 8(4012)-37-66-23</address>
+                            <address class="trust__adr sse">Адрес: г.Калининград,пл.Победы,10,ТЦ Кловер,каб.320</address>
+                            <address class="trust__mail sse">Почта: temkto.naphronte@mail.ru</address>
+                            <address class="trust__tel sse">Телефон: 8(4012)-37-66-23</address>
                         </div>
                     </div>
                 </div>
                 <div class="trust__line"></div>
                 <div class="trust__down">
                     <div class="trust__dleft">
-                        <p class="trust__copy">© 2022 БЛАГОТВОРИТЕЛЬНЫЙ ФОНД «ДЛЯ ТЕХ, КТО НА ФРОНТЕ». ВСЕ ПРА</p>
+                        <p class="trust__copy">© 2022 БЛАГОТВОРИТЕЛЬНЫЙ ФОНД «ДЛЯ ТЕХ, КТО НА ФРОНТЕ». ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
                     </div>
                     <div class="trust__dright">
                         <p class="trust__description">
-                            Все права защищены. Фонд «Вера» обладает исключительным правом 
+                            Все права защищены.<br> Фонд «Вера» обладает исключительным правом на все материалы, размещенные на сайте - и/или имеет разрешение правообладателя на <br> на использование таких материалов на сайте.<br>Использование размещенных на сайте материалов (включая тексты, фотографии, видеоматериалы, графические изображения и прочее) 
                         </p>
                     </div>
                 </div>
@@ -194,30 +194,32 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="nav">
-            <div class="footer__left">
-                <div class="img">
-                    <img src="/imgs/Герб.png" alt="logo">
+        <div class="container">
+            <div class="nav">
+                <div class="footer__left">
+                    <div class="img">
+                        <img src="/imgs/Герб.png" alt="logo">
+                    </div>
+                    <div class="footer__text-logo">
+                        <p class="footer__desc">
+                            Фонд помощи <br><strong>Тем кто на фронте</strong>
+                        </p>
+                    </div>
+                    <div class="footer__img">
+                        <img src="/imgs/z_logo-1.png" alt="z-logo">
+                    </div>
                 </div>
-                <div class="footer__img">
-                    <img src="/imgs/z_logo-1.png" alt="z-logo">
-                </div>
-                <div class="footer__text-logo">
-                    <p class="footer__desc">
-                        Фонд помощи <span>Тем кто на фронте</span>
-                    </p>
-                </div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link">Главная</a></li>
+                    <li class="footer__item"><a class="footer__link">Кто мы</a></li>
+                    <li class="footer__item"><a class="footer__link">Реквизиты</a></li>
+                    <li class="footer__item"><a class="footer__link">Отчетность</a></li>
+                    <li class="footer__item"><a class="footer__link">Партнеры</a></li>
+                </ul>
+                <button class="footer__button btn">
+                    сделать добро
+                </button>
             </div>
-            <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link">Главная</a></li>
-                <li class="footer__item"><a class="footer__link">Кто мы</a></li>
-                <li class="footer__item"><a class="footer__link">Реквизиты</a></li>
-                <li class="footer__item"><a class="footer__link">Отчетность</a></li>
-                <li class="footer__item"><a class="footer__link">Партнеры</a></li>
-            </ul>
-            <button class="footer__button btn">
-                сделать добро
-            </button>
         </div>
     </footer>
 </body>
