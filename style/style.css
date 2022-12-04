@@ -1,5 +1,25 @@
 * {
     box-sizing: border-box;
+    font-family: regular;
+}
+
+@font-face {
+    font-family: "regular";
+    src: url(/fonts/noto-sans-display-regular.woff);
+}
+
+@font-face {
+    font-family: "btn";
+    src: url(/fonts/noto-sans-display-semibold.woff);
+}
+
+body {
+	font-family: "regular";
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.2;
+	color: #000;
+	background-color: #fff;
 }
 
 ul {
@@ -18,8 +38,10 @@ ul {
 
 .btn {
     display: flex;
-    width: 180px;
-    height: 45px;
+    min-width: 180px;
+    min-height: 45px;
+    max-width: max-content;
+    max-height: max-content;
     padding: 20px 13px 20px 13px;
     cursor: pointer;
     align-items: center;
@@ -27,12 +49,21 @@ ul {
     color: white;
     background-color: #fc0404;
     border: 1px solid #fc0404;
+    font-family: "btn";
+    font-size: large;
 
 }
 
-@font-face {
-    font-family: regular;
-    src: url(/fonts/Poppins-Medium.ttf);
+.btn:hover {
+    /* color: #fc0404;
+    background-color: aliceblue;
+    border-color:aliceblue; */
+    opacity: .4;
+}
+
+.btn:active {
+    transform: translateY(3px);
+    transition: .2 ease-in-out;
 }
 
 .h,
@@ -42,6 +73,11 @@ ul {
 
 .header {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -91,9 +127,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 100px 50px 40px 55px;
-    justify-content: space-between;
-
-    
+    justify-content: space-between;   
 }
 
 /* our */
@@ -148,8 +182,9 @@ ul {
 }
 
 .peoples__item{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .peoples__item:not(:nth-child(3n)){
@@ -161,7 +196,8 @@ ul {
 }
 
 .peoples__name{
-    align-self: center;
+    font-family: "btn";
+    font-size: xx-large;
 }
 
 .peoples__heading {
@@ -222,11 +258,12 @@ ul {
 }
 /* nav */
 
-.nav {
+.footer__nav {
     display: flex;
     margin-top: 122px;
     align-items: center;
     padding: 0px 20px 0px 20px;
+    justify-content: space-between;
 }
 
 .footer__left {
