@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
     <title>Document</title>
@@ -12,8 +12,8 @@
         <div class="container">
             <div class="nav">
                 <div class="header__left">
-                    <div class="img">
-                        <img src="/imgs/Герб.png" alt="logo">
+                    <div>
+                        <img class="header__img" src="/imgs/Герб.png" alt="logo">
                     </div>
                     <div class="header__text-logo">
                         <p class="header__desc">
@@ -28,42 +28,22 @@
                     <li class="header__item"><a href="#4" class="header__link">Отчетность</a></li>
                     <li class="header__item"><a href="#5" class="header__link">Партнеры</a></li>
                 </ul>
-                <div class="burger__text">
-                    <p class="burger__t">#ЗАнаших</p>
-                </div>
-                <div class="burger__icon">
-                    <img src="/imgs/hamburger-menu-svgrepo-com.svg" alt="">
+                <div class="burger">
+                    <img src="/imgs/hamburger-menu-svgrepo-com.svg" alt="" class="burger__icon">
                 </div>
                 <button class="header__button btn">
                     сделать добро
                 </button>
             </div>
         </div>
-        <div class="burger__menu active">
-            <div class="burger__top">
-                <ul class="burger__list">
-                    <li class="burger__item">
-                        <img src="/imgs/hamburger-menu-svgrepo-com.svg" alt="">
-                    </li>
-                    <li class="burger__item">
-                        <div class="img">
-                            <img src="/imgs/Герб.png" alt="logo">
-                        </div>
-                        <div class="burger__text-logo">
-                            <p class="burger__desc">
-                                Фонд помощи <br><strong>Тем кто на фронте</strong>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="burger__men">
-                    <li class="burger__tem"><a href="#" class="burger__link">Главная</a></li>
-                    <li class="burger__tem"><a href="#1" class="burger__link">Кто мы</a></li>
-                    <li class="burger__tem"><a href="#" class="burger__link">Реквизиты</a></li>
-                    <li class="burger__tem"><a href="#4" class="burger__link">Отчетность</a></li>
-                    <li class="burger__tem"><a href="#5" class="burger__link">Партнеры</a></li>
-                </ul>
-            </div>
+        <div class="menu">
+            <ul class="header__lis">
+                <li class="header__iem"><a href="#" class="header__link">Главная</a></li>
+                <li class="header__iem"><a href="#1" class="header__link">Кто мы</a></li>
+                <li class="header__iem"><a href="#" class="header__link">Реквизиты</a></li>
+                <li class="header__iem"><a href="#4" class="header__link">Отчетность</a></li>
+                <li class="header__iem"><a href="#5" class="header__link">Партнеры</a></li>
+            </ul>
         </div>
     </header>
     <section class="section">
@@ -75,8 +55,8 @@
                     <p class="freedom__text">Мы - неравнодушные Россияне предлогаем свою помощь нашим военнослужащим. Наши парни обеспечены всем необходимым, но уверен, что любая наша поддержка и простое человеческое внимание поможет, в первую очередь, поддеожать моральный и боевой дух.</p>
                     <button class="freedom__button btn">сделать добро</button>
                 </div>
-                <div class="freedom__img">
-                    <img src="/imgs/ФОТО 1.png" alt="foto1">
+                <div>
+                    <img class="freedom__img" src="/imgs/ФОТО 1.png" alt="foto1">
                 </div>
             </div>
         </div>
@@ -84,8 +64,8 @@
     <section class="section">
         <div class="container">
             <div class="our">
-                <div class="our__img">
-                    <img src="/imgs/section__our.png" alt="our">
+                <div>
+                    <img class="our__img" src="/imgs/section__our.png" alt="our">
                 </div>
                 <div class="our__content">
                     <p class="our__heading h">Нами принято решение, не буть в стороне ситуации с Украиной и поддержать наших военнослужащих!</p>
@@ -103,8 +83,8 @@
                         поддержать
                     </button>
                 </div>
-                <div class="stand__img">
-                    <img class="family" src="/imgs/fam.png" alt="family">
+                <div>
+                    <img class="stand__img" src="/imgs/fam.png" alt="family">
                     <img src="/imgs/cd6415d3ea42608e5beedfc1544290de2436b7d6b_2560_1707_c 1.png" alt="" class="mobile">
                 </div>
             </div>
@@ -125,8 +105,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="help__imgs">
-                    <img src="/imgs/еда.png" alt="еда">
+                <div>
+                    <img class="help__imgs" src="/imgs/еда.png" alt="еда">
                 </div>
             </div>
         </div>
@@ -143,8 +123,8 @@
                     <p class="user__heading hs"><strong>Уважаемый посетитель нашего сайта!</strong></p>
                     <p class="user__content">Вы можете пожертвовать деньги на армию России с помощью предложенных методов оплат. После подтверждения взноса Вы будете перенаправлены на защищенную платежную страницу , где необходимо будет ввести данные для пожертвования. После успешной операции на указанную в форме оплаты электронную почту будет направлен электронный чек с информацией и данными по произведенному взносу.</p>
                 </div>
-                <div class="user__img">
-                    <img src="/imgs/Анимация 9 мая.png" alt="animation">
+                <div class="user__picture">
+                    <img class="user__img" src="/imgs/Анимация 9 мая.png" alt="animation">
                 </div>
             </div>
         </div>
@@ -268,5 +248,25 @@
             </div>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <div class="footer__mobile">
+                <div class="footer__adapt">
+                    <p class="footer__adapt-d"><strong>© 2022 БЛАГОТВОРИТЕЛЬНЫЙ ФОНД «ДЛЯ ТЕХ, КТО НА ФРОНТЕ». ВСЕ ПРАВА
+                            ЗАЩИЩЕНЫ</strong></p>
+                    <p class="footer__adapt-dt">Все права защищены.
+                        Фонд «Тем, кто на фронте» обладает исключительным правом на все материалы, размещенные на сайте — и/или имеет
+                        разрешение
+                        правообладателя на использование таких материалов на сайте.
+                        Использование размещенных на сайте материалов (включая тексты, фотографии, видеоматериалы, графические
+                        изображения и
+                        прочее) не допускается без согласия фонда «Тем, кто на фронте» или иного правообладателя соответствующих
+                        материалов.
+                        При цитировании материалов, размещенных на сайте, ссылка на сайт является обязательной.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
