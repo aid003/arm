@@ -141,10 +141,15 @@ a {
   background-color:beige;
   transform: translateX(-101%);
   transition: 1s ease-in-out;
+  overflow-y:hidden;
 }
 
 .header__lis {
+    height: 100%;
     min-height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -457,7 +462,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+
         padding: 0; 
     }
 
