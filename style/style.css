@@ -167,7 +167,7 @@ a {
 .freedom__left {
     display: flex;
     flex-direction: column;
-    padding: 100px 50px 40px 55px;
+    padding: 55px 50px 40px 55px;
     justify-content: space-between;   
 }
 
@@ -187,7 +187,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 120px 80px 120px 80px;
+    padding: 80px 80px 120px 80px;
 }
 
 .our__img {
